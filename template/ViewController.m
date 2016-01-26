@@ -24,4 +24,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)grados:(id)sender {
+    float temp;
+
+    temp = mainSlider.value;
+    celsiusLabel.text = [NSString stringWithFormat: @"%0.3f", temp];
+
+    temp = temp * 1.8 + 32;
+    farenheihLabel.text = [NSString stringWithFormat: @"%0.2f", temp]
+
+}
+
 @end
